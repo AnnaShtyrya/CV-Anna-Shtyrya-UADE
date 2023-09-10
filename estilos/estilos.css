@@ -58,6 +58,58 @@ a {
     text-decoration: none;
 }
 
+body {
+    padding: 250px 10% 5%;
+}
+
+.texto-der{
+    display: inline-block;
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 5%;
+    width: auto;
+    min-width: 10%;
+    overflow-wrap: normal;
+}
+.periodo-exp {
+    display: inline-block;
+    padding-right: 5%;
+}
+
+h1 {
+    font-family: var(--custom-font), 'sans-serif';
+    color: var(--main-color);
+}
+
+h2 {
+    font-family: var(--custom-font), 'sans-serif';
+    color: var(--main-contrast-color);
+}
+
+h3 {
+    font-family: var(--custom-font), 'sans-serif';
+    color: var(--alt-contrast-color);
+}
+
+
+p {
+    font-family: var(--custom-font), 'sans-serif';
+    color: var(--main-color);
+}
+
+.card-foto{
+    display: inline-block;
+    height:400px;
+    width: auto;
+}
+
+.card-foto img{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .contactos{
     position: fixed;
     width:250px;
