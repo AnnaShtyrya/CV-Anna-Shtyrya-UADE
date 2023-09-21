@@ -6,7 +6,7 @@
 
     --custom-font: 'Alata'
 }
-
+/*
 header{
     background-color: var(--main-color);
     width: 100%;
@@ -14,6 +14,7 @@ header{
     position:fixed;
     top: 0px;
     left:0px;
+    z-index: 1;
 }
 
 #div-logo{
@@ -30,16 +31,11 @@ header{
 
 nav {
     width: fit-content;
-    display:flexbox;
+    display:flex;
     float:right;
     padding: 40px 20px;
+    flex-wrap: wrap;
 }
-
-/* nav ul li{
-    display: inline;
-    font-family: 'Alata';
-    padding: 3%; 
-} */
 
 nav .active{
     color: var(--alt-contrast-color);
@@ -61,6 +57,7 @@ a {
 
 body {
     padding: 250px 10% 5%;
+    display: flexbox;
 }
 
 .texto-der{
@@ -156,3 +153,18 @@ footer p{
     font-size: 12px;
     line-height: 0;
 }
+
+@media (max-width: 580px){
+    nav {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .texto-der {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+}
+*/
