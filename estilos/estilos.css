@@ -6,16 +6,44 @@
 
     --custom-font: 'Alata'
 }
-/*
+
+html {
+    font-family: Alata, sans-serif;
+}
+
+
+
+
 header{
     background-color: var(--main-color);
     width: 100%;
     height: fit-content;
     position:fixed;
-    top: 0px;
-    left:0px;
+    top: 0;
+    right: 0;
     z-index: 1;
 }
+
+header a {
+    color: var(--bg-color);
+}
+
+h1 {
+    color: var(--main-contrast-color)
+}
+
+h2,h3 {
+    color: var(--alt-contrast-color)
+}
+
+body p {
+    color: var(--main-color)
+}
+
+a {
+    text-decoration: none;
+}
+
 
 #div-logo{
    padding: 30px;
@@ -50,14 +78,10 @@ nav a:hover {
     color: var(--alt-contrast-color);
 }
 
-a {
-    text-decoration: none;
-    font-family: var(--custom-font), 'sans-serif';
-}
 
 body {
-    padding: 250px 10% 5%;
-    display: flexbox;
+    padding: 200px 10% 5%;
+    
 }
 
 .texto-der{
@@ -72,27 +96,6 @@ body {
 .periodo-exp {
     display: inline-block;
     padding-right: 5%;
-}
-
-h1 {
-    font-family: var(--custom-font), 'sans-serif';
-    color: var(--main-color);
-}
-
-h2 {
-    font-family: var(--custom-font), 'sans-serif';
-    color: var(--main-contrast-color);
-}
-
-h3 {
-    font-family: var(--custom-font), 'sans-serif';
-    color: var(--alt-contrast-color);
-}
-
-
-p {
-    font-family: var(--custom-font), 'sans-serif';
-    color: var(--main-color);
 }
 
 .card-foto{
@@ -154,10 +157,22 @@ footer p{
     line-height: 0;
 }
 
+
 @media (max-width: 580px){
     nav {
         flex-direction: column;
         padding-bottom: 10px;
+    }
+
+    body {
+        padding-top: 300px;
+    }
+
+    .card-foto{
+        display: flex;
+        justify-content: center;
+        height:400px;
+        width: auto;
     }
 
     .texto-der {
@@ -166,5 +181,14 @@ footer p{
         flex-direction: column;
         padding-top: 5px;
     }
+
+    .contactos{
+        position: fixed;
+        left: 0px;
+    }
+
+    .contactos ul li{
+        padding: 1%;
+        display: block;
+    }
 }
-*/
