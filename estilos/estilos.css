@@ -6,14 +6,15 @@
 
     --custom-font: 'Alata'
 }
-
-.header{
+/*
+header{
     background-color: var(--main-color);
     width: 100%;
-    height: 100px;
-    position: fixed;
+    height: fit-content;
+    position:fixed;
     top: 0px;
     left:0px;
+    z-index: 1;
 }
 
 #div-logo{
@@ -29,19 +30,11 @@
 }
 
 nav {
-    width: 800px;
+    width: fit-content;
+    display:flex;
     float:right;
-    padding: 20px 0;
-}
-
-nav ul{
-    list-style-type: none;
-}
-
-nav ul li{
-    display: inline;
-    font-family: 'Alata';
-    padding: 3%; 
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
 nav .active{
@@ -50,6 +43,7 @@ nav .active{
 
 nav a {
     color: var(--bg-color);
+    padding: 10px;
 }
 
 nav a:hover {
@@ -58,10 +52,12 @@ nav a:hover {
 
 a {
     text-decoration: none;
+    font-family: var(--custom-font), 'sans-serif';
 }
 
 body {
     padding: 250px 10% 5%;
+    display: flexbox;
 }
 
 .texto-der{
@@ -157,3 +153,18 @@ footer p{
     font-size: 12px;
     line-height: 0;
 }
+
+@media (max-width: 580px){
+    nav {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .texto-der {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+}
+*/
