@@ -79,9 +79,8 @@ nav a:hover {
 }
 
 
-body {
-    padding: 200px 10% 5%;
-    
+main {
+    padding: 200px 10% 5%;   
 }
 
 .texto-der{
@@ -113,21 +112,19 @@ body {
 
 .contactos{
     position: fixed;
-    width:250px;
-    float: right;
-    bottom: 20px;
-    right: 0;
-    
+    right: 15px;
+    bottom:10px;
 }
 
 .contactos ul{
     list-style-type: none;
+    display: flex;
+    align-items: end;
     
 }
 
 .contactos ul li{
     padding: 1%;
-    display: inline;
 }
 
 .gmail-icon{
@@ -162,12 +159,19 @@ footer p{
     nav {
         flex-direction: column;
         padding-bottom: 10px;
+        justify-content: center;
     }
 
-    body {
-        padding-top: 300px;
+    main {
+        padding: 300px 0;
+    }
+    h1 {
+        color:var(--main-color)
     }
 
+    h2 {
+        color: var(--main-contrast-color)
+    }
     .card-foto{
         display: flex;
         justify-content: center;
@@ -179,16 +183,31 @@ footer p{
         display: flex;
         flex: wrap;
         flex-direction: column;
-        padding-top: 5px;
+        padding: 5px 10% 15px;
+    }
+    h1, h2, h3, p{
+        text-align: center;
+    }
+
+    .texto-centro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10%;
+    }
+
+    .texto-centro h1, h2{
+        padding-bottom: 1px;
     }
 
     .contactos{
         position: fixed;
         left: 0px;
+        right: auto;
     }
-
-    .contactos ul li{
-        padding: 1%;
-        display: block;
+    .contactos ul {
+        display: flex;
+        flex-direction: column;
     }
 }
