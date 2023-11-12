@@ -11,9 +11,6 @@ html {
     font-family: Alata, sans-serif;
 }
 
-
-
-
 header{
     background-color: var(--main-color);
     width: 100%;
@@ -138,6 +135,17 @@ main {
     width: 50px;
 }
 
+canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+  }
+
+.centrado {
+    display: table;
+    margin: 0 auto;
+}
+
 footer{
     position: fixed;
     background-color: var(--main-contrast-color);
@@ -181,8 +189,7 @@ footer p{
 
     .texto-der {
         display: flex;
-        flex: wrap;
-        flex-direction: column;
+        flex-flow: column wrap;
         padding: 5px 10% 15px;
     }
     h1, h2, h3, p{
@@ -191,8 +198,7 @@ footer p{
 
     .texto-centro {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-flow: column wrap;
         justify-content: center;
         padding: 0 10%;
     }
